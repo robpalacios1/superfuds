@@ -393,12 +393,13 @@ $xxl: 1400px;
 }
 
 .search__input::placeholder {
-  font-weight: 900;
+  font-weight: 100;
   font-size: 17px;
   line-height: 26px;
   display: flex;
   align-items: center;
   color: #161c2d;
+  opacity: 0.4;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
