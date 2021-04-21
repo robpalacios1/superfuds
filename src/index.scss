@@ -429,7 +429,6 @@ $xxl: 1400px;
 
 .card {
   display: flex;
-  justify-content: space-between;
   &__image {
     background-color: #fff;
     background-color: #fff;
@@ -446,7 +445,6 @@ $xxl: 1400px;
   }
   &__image-product {
     width: 300px;
-    background-color: aqua;
   }
   &__reference {
     background-color: blueviolet;
@@ -455,6 +453,7 @@ $xxl: 1400px;
     position: absolute;
     top: 15px;
     right: 20px;
+    overflow-y: hidden;
   }
   &__sellos-2 {
     position: absolute;
@@ -468,9 +467,6 @@ $xxl: 1400px;
   }
   &__hr {
     margin: 15px;
-  }
-  &__info {
-    background-color: burlywood;
   }
   &__top {
     display: flex;
@@ -507,5 +503,33 @@ $xxl: 1400px;
   &__price-unit {
     color: grey;
     font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    display: flex;
+    &__container {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__image {
+      margin: 0.938rem 80px;
+    }
+    &__sellos-1 {
+      position: absolute;
+      top: 15px;
+      right: 10px;
+    }
+    &__sellos-2 {
+      position: absolute;
+      top: 75px;
+      right: 10px;
+    }
+    &__sellos-3 {
+      position: absolute;
+      top: 135px;
+      right: 10px;
+    }
   }
 }
