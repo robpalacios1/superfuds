@@ -278,6 +278,7 @@ $xxl: 1400px;
       width: 50px;
       height: 50px;
       border-radius: 50%;
+      overflow-y: hidden;
     }
   }
 
@@ -421,5 +422,90 @@ $xxl: 1400px;
   }
   &__results {
     color: black;
+  }
+}
+
+/*** Card ***/
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  &__image {
+    background-color: #fff;
+    background-color: #fff;
+    box-shadow: 0rem 0.25rem 0.5rem 0rem rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin-top: 0.938rem;
+    margin: 0.938rem 111px;
+    border-radius: 10px;
+  }
+  &__image-general {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  &__image-product {
+    width: 300px;
+    background-color: aqua;
+  }
+  &__reference {
+    background-color: blueviolet;
+  }
+  &__sellos-1 {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+  &__sellos-2 {
+    position: absolute;
+    top: 75px;
+    right: 20px;
+  }
+  &__sellos-3 {
+    position: absolute;
+    top: 135px;
+    right: 20px;
+  }
+  &__hr {
+    margin: 15px;
+  }
+  &__info {
+    background-color: burlywood;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    color: #26c148;
+    font-size: 20px;
+    margin: 5px;
+  }
+  &__weight {
+    background-color: green;
+    color: #fff;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 15px;
+  }
+  &__description {
+    font-size: 20px;
+    margin-left: 5px;
+  }
+  &__bottom {
+    margin-top: 15px;
+  }
+  &__price {
+    margin: 0 5px;
+  }
+  &__price-real {
+    color: black;
+  }
+  &__price-dollar {
+    color: #26c148;
+  }
+  &__price-unit {
+    color: grey;
+    font-size: 10px;
   }
 }
