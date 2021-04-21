@@ -1,6 +1,7 @@
 import React from 'react'
 import Search from './Search'
 import logo from '../assets/superfuds.png'
+import Avatar from 'react-avatar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faShoppingCart, faChevronDown} from '@fortawesome/free-solid-svg-icons'
 
@@ -32,12 +33,16 @@ const Header = () => {
               <h3>Sayby Alimentos</h3>
               <span className="access__span">Mi perfil</span>
               <FontAwesomeIcon
-                className="access__icon"
+                className="access__icon-down"
                 icon={faChevronDown}
               />
             </div>
-            <div>
-
+            <div className="access__avatar">
+              <Avatar
+                name="Wim Mostmans"
+                size="150"
+                textSizeRatio={1.75}
+              />
             </div>
           </div>
           <div className="mobile-search">
