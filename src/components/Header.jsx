@@ -1,5 +1,6 @@
 import React from 'react'
 import Search from './Search'
+import logo from '../assets/superfuds.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faShoppingCart, faChevronDown} from '@fortawesome/free-solid-svg-icons'
 
@@ -18,7 +19,7 @@ const Header = () => {
             <Search />
           </nav>
           <div className="logo">
-            <h1 className="logo__desktop">Superfuds</h1>
+            <img src={logo} alt="logo"/>
           </div>
           <div className="access">
             <a href="#" className="access__icon">
@@ -34,6 +35,9 @@ const Header = () => {
                 className="access__icon"
                 icon={faChevronDown}
               />
+            </div>
+            <div>
+
             </div>
           </div>
           <div className="mobile-search">
