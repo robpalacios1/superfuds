@@ -519,10 +519,10 @@ $xxl: 1400px;
     font-size: 10px;
   }
   &__add-cart {
-    width: 98%;
+    width: 100%;
     background-color: #26c148;
-    margin: 5px;
     color: #fff;
+    height: 30px;
     border: none;
     outline: none;
   }
@@ -566,5 +566,92 @@ $xxl: 1400px;
       display: flex;
       justify-content: center;
     }
+  }
+}
+
+/*** Basket ***/
+
+.basket {
+  background-color: aqua;
+  &__container {
+  }
+  &__title {
+    background-color: bisque;
+  }
+  &__title-shopping {
+    font-size: 40px;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    background-color: blueviolet;
+  }
+  &__item-product {
+    background-color: coral;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  &__product {
+    display: flex;
+    justify-content: flex-start;
+  }
+  &__product-item {
+    width: 150px;
+  }
+  &__cantidad {
+    font-size: 20px;
+  }
+  &__cantidad-item {
+    font-weight: bold;
+  }
+  &__circles {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__circle-minus {
+    width: 30px;
+    height: 30px;
+    background-color: crimson;
+    border-radius: 50%;
+    overflow-y: hidden;
+  }
+  &__number-negative {
+    margin-left: 12px;
+    font-weight: bolder;
+  }
+  &__number {
+    font-weight: bolder;
+  }
+  &__circle-plus {
+    width: 30px;
+    height: 30px;
+    background-color: crimson;
+    border-radius: 50%;
+    overflow-y: hidden;
+  }
+  &__number-positive {
+    margin-left: 10px;
+    font-weight: bolder;
+  }
+  &__price {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  &__price-unit {
+    margin-top: 60px;
+    font-weight: bold;
+  }
+  &__price-dollar {
+    color: #26c148;
+  }
+  &__price-item {
+    margin-left: 5px;
+  }
+  &__delete {
+    font-size: 25px;
+    margin-top: 86px;
   }
 }

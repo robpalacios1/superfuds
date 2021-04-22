@@ -543,10 +543,10 @@
 }
 
 .card__add-cart {
-  width: 98%;
+  width: 100%;
   background-color: #26c148;
-  margin: 5px;
   color: #fff;
+  height: 30px;
   border: none;
   outline: none;
 }
@@ -589,4 +589,108 @@
     display: flex;
     justify-content: center;
   }
+}
+
+/*** Basket ***/
+.basket {
+  background-color: aqua;
+}
+
+.basket__title {
+  background-color: bisque;
+}
+
+.basket__title-shopping {
+  font-size: 40px;
+}
+
+.basket__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.basket__item {
+  background-color: blueviolet;
+}
+
+.basket__item-product {
+  background-color: coral;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.basket__product {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.basket__product-item {
+  width: 150px;
+}
+
+.basket__cantidad {
+  font-size: 20px;
+}
+
+.basket__cantidad-item {
+  font-weight: bold;
+}
+
+.basket__circles {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.basket__circle-minus {
+  width: 30px;
+  height: 30px;
+  background-color: crimson;
+  border-radius: 50%;
+  overflow-y: hidden;
+}
+
+.basket__number-negative {
+  margin-left: 12px;
+  font-weight: bolder;
+}
+
+.basket__number {
+  font-weight: bolder;
+}
+
+.basket__circle-plus {
+  width: 30px;
+  height: 30px;
+  background-color: crimson;
+  border-radius: 50%;
+  overflow-y: hidden;
+}
+
+.basket__number-positive {
+  margin-left: 10px;
+  font-weight: bolder;
+}
+
+.basket__price {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.basket__price-unit {
+  margin-top: 60px;
+  font-weight: bold;
+}
+
+.basket__price-dollar {
+  color: #26c148;
+}
+
+.basket__price-item {
+  margin-left: 5px;
+}
+
+.basket__delete {
+  font-size: 25px;
+  margin-top: 86px;
 }
