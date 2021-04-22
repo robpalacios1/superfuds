@@ -505,14 +505,15 @@
   color: #26c148;
   font-size: 20px;
   margin: 5px;
+  margin-top: 15px;
 }
 
 .card__weight {
   background-color: green;
   color: #fff;
-  padding: 5px;
+  padding: 10px 37px 10px 30px;
   margin: 5px;
-  border-radius: 15px;
+  border-radius: 25px;
 }
 
 .card__description {
