@@ -45,9 +45,6 @@ const Header = () => {
               />
             </div>
           </div>
-          <div className="mobile-search">
-            <img className="mobile-search__img" src="./assets/icon-search.svg" alt="Icon Search" />
-          </div>
         </div>
       </div>
     </header>
