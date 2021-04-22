@@ -545,6 +545,7 @@
 .card__add-cart {
   width: 100%;
   background-color: #26c148;
+  border-color: #26c148;
   color: #fff;
   height: 30px;
   border: none;
@@ -592,14 +593,6 @@
 }
 
 /*** Basket ***/
-.basket {
-  background-color: aqua;
-}
-
-.basket__title {
-  background-color: bisque;
-}
-
 .basket__title-shopping {
   font-size: 40px;
 }
@@ -609,12 +602,7 @@
   justify-content: space-between;
 }
 
-.basket__item {
-  background-color: blueviolet;
-}
-
 .basket__item-product {
-  background-color: coral;
   font-size: 20px;
   font-weight: bold;
 }
@@ -626,6 +614,28 @@
 
 .basket__product-item {
   width: 150px;
+}
+
+.basket__product-name {
+  margin-top: 40px;
+}
+
+.basket__product-unit {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.basket__product-cantidad {
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+.basket__product-category {
+  color: #26c148;
+}
+
+.basket__product-mark {
+  font-size: 15px;
 }
 
 .basket__cantidad {

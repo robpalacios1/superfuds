@@ -521,6 +521,7 @@ $xxl: 1400px;
   &__add-cart {
     width: 100%;
     background-color: #26c148;
+    border-color: #26c148;
     color: #fff;
     height: 30px;
     border: none;
@@ -572,12 +573,6 @@ $xxl: 1400px;
 /*** Basket ***/
 
 .basket {
-  background-color: aqua;
-  &__container {
-  }
-  &__title {
-    background-color: bisque;
-  }
   &__title-shopping {
     font-size: 40px;
   }
@@ -585,11 +580,7 @@ $xxl: 1400px;
     display: flex;
     justify-content: space-between;
   }
-  &__item {
-    background-color: blueviolet;
-  }
   &__item-product {
-    background-color: coral;
     font-size: 20px;
     font-weight: bold;
   }
@@ -599,6 +590,23 @@ $xxl: 1400px;
   }
   &__product-item {
     width: 150px;
+  }
+  &__product-name {
+    margin-top: 40px;
+  }
+  &__product-unit {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  &__product-cantidad {
+    font-size: 12px;
+    opacity: 0.5;
+  }
+  &__product-category {
+    color: #26c148;
+  }
+  &__product-mark {
+    font-size: 15px;
   }
   &__cantidad {
     font-size: 20px;

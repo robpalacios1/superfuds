@@ -16,6 +16,15 @@ const Basket = () => {
             <span className="basket__item-product">item</span>
               <div className="basket__product">
                 <img className="basket__product-item" src={product} alt="product"/>
+                <div className="basket__product-name">
+                  <h4 className="basket__product-unit">Super Kale Chips</h4>
+                  <div className="basket__product-cantidad">
+                    <span>x 6 unid - 250 gr c/u</span>
+                  </div>
+                  <div className="basket__product-category">
+                    <h4 className="basket__product-mark">Superfuds</h4>
+                  </div>
+                </div>
               </div>
 
               <div className="basket__product">
