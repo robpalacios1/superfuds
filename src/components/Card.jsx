@@ -5,10 +5,10 @@ const Card = () => {
   const [item, setItem] = useState([]);
 
   useEffect(() => {
-    obtenerDatos();
+    getData();
   }, [])
 
-  const obtenerDatos = async() => {
+  const getData = async() => {
     const data = await fetch('https://superfuds-assets.s3-sa-east-1.amazonaws.com/utils/product.json');
     const users = await data.json();
     console.log(users);
