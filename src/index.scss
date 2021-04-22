@@ -518,6 +518,18 @@ $xxl: 1400px;
     color: grey;
     font-size: 10px;
   }
+  &__add-cart {
+    width: 98%;
+    background-color: #26c148;
+    margin: 5px;
+    color: #fff;
+    border: none;
+    outline: none;
+  }
+  &__add-cart:hover {
+    background-color: #fff;
+    color: #26c148;
+  }
 }
 
 @media only screen and (min-width: 768px) {

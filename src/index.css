@@ -542,6 +542,20 @@
   font-size: 10px;
 }
 
+.card__add-cart {
+  width: 98%;
+  background-color: #26c148;
+  margin: 5px;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+.card__add-cart:hover {
+  background-color: #fff;
+  color: #26c148;
+}
+
 @media only screen and (min-width: 768px) {
   .card {
     display: flex;

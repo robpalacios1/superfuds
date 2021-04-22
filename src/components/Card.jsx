@@ -36,7 +36,7 @@ const Card = () => {
                       <img src={card.sellos[0].image} alt="vegano"/>
                     </div>
                   </div>
-                </div>
+              </div>
 
                 <div className="card__hr">
                   <hr/>
@@ -62,6 +62,11 @@ const Card = () => {
                       <h3 className="card__price-real"><span className="card__price-dollar">$</span>{card.price_real} <span className="card__price-unit">x 1 unids</span></h3>
                     </div>
                   </div>
+
+                  <div className="card__cart">
+                    <button className="card__add-cart">Agregar al carrito</button>
+                  </div>
+
                 </div>
               </div>
             ))
