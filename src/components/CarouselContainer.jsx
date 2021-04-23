@@ -1,4 +1,7 @@
 import React from 'react'
+
+
+/***** Carousel *****/
 import { Carousel } from 'react-bootstrap';
 
 const CarouselContainer = () => {

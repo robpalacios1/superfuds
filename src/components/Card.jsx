@@ -2,12 +2,15 @@ import React, {useEffect, useState} from 'react'
 
 const Card = () => {
 
+  /***** UseState *****/
   const [item, setItem] = useState([]);
 
+  /***** UseEffect *****/
   useEffect(() => {
     getData();
   }, [])
 
+  /***** Call an Api Fetch *****/
   const getData = async() => {
     const data = await fetch('https://superfuds-assets.s3-sa-east-1.amazonaws.com/utils/product.json');
     const users = await data.json();

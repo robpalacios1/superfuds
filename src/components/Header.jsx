@@ -1,18 +1,24 @@
 import React from 'react'
+
+/***** Components *****/
 import Search from './Search'
+
+/***** Logo *****/
 import logo from '../assets/superfuds.png'
+
+/***** Font awesome icons*****/
 import Avatar from 'react-avatar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faShoppingCart, faChevronDown} from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
   return (
-    <header className="header js-header js-sticky">
+    <header className="header">
       <div className="container">
         <div className="flexbox">
           <div className="burger">
-            <div className="burger__button js-burger-button"></div>
-            <div className="burger__close js-burger-close">
+            <div className="burger__button "></div>
+            <div className="burger__close ">
               <img src="./assets/burger-close.svg" alt="Icon burger close" />
             </div>
           </div>
@@ -23,7 +29,8 @@ const Header = () => {
             <img src={logo} alt="logo"/>
           </div>
           <div className="access">
-            <a href="#" className="access__icon">
+            <a href="#" 
+              className="access__icon">
               <FontAwesomeIcon
               icon={faShoppingCart}
               size = '2x'

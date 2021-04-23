@@ -1,9 +1,12 @@
 import React, {useState, useEffect} from 'react'
+
+/***** Font awesome icons*****/
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faTrashAlt} from '@fortawesome/free-solid-svg-icons'
 
-const Basket = ({card}) => {
+const Basket = () => {
 
+  /***** UseStates *****/
   const [item, setItem] = useState([]);
   const [count, setCount] = useState(0);
 
@@ -11,6 +14,7 @@ const Basket = ({card}) => {
     getData();
   }, [])
 
+  /***** UseEffect*****/
   const getData = async() => {
     const data = await fetch('https://superfuds-assets.s3-sa-east-1.amazonaws.com/utils/product.json');
     const users = await data.json();
@@ -25,7 +29,7 @@ const Basket = ({card}) => {
           <h2 className="basket__title-shopping">Carrito de compras</h2>
         </div>
         <div>
-          <ul>
+          <div>
             {
               item.map(card => (
                 <div className="basket__container">
@@ -71,7 +75,7 @@ const Basket = ({card}) => {
                   <div className="basket__price">
                     <span>Precio</span>
                     <div className="basket__price-unit">
-                      <span 
+                      <span
                         className="basket__price-dollar"
                       >$
                       </span>
@@ -92,7 +96,7 @@ const Basket = ({card}) => {
                 </div>
               ))
             }
-          </ul>
+          </div>
         </div>
       </div>
     </section>
